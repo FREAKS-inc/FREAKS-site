@@ -57,7 +57,7 @@ p {
 
 /*############################### ID SELECTORS ###############################*/
 
-#coming-soon{
+#coming-soon::after{
   z-index: 1;
   position: fixed;
   font-size: 3rem;
@@ -85,10 +85,12 @@ p {
 
 /*###############################  KEYFRAMES   ###############################*/
 
+/* Looks like I need javascript to animate what I want here */
 @keyframes whats-coming
 {
   0%{
     content: attr(contents);
+    content: "Hello Therwe";
     opacity: 1;
     top: 0;
     left: 0;
